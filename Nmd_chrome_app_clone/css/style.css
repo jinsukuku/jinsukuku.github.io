@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.hiddenClass{
+    display:none;
+}
+
+
+.wrap{
+    text-align: center;
+    color:#fff;
+    margin-top:100px;
+}
+
+#clock{
+    font-size:64px;
+    margin-bottom:20px;
+    font-family: 'Y_Spotlight';
+}
+
+h1{
+    font-size:28px;
+}
+
+
+#login-form input, #todo-form input{
+    border: none;
+    outline: none;
+    padding: 5px 5px 8px 0px;
+    width: 420px;
+    font-size: 18px;
+    border-bottom: solid 1px #efefef;
+    background-color:rgba(225,225,225,0);
+    color:#fff;
+}
+
+#login-form input::placeholder{ color:#aaa;}
+#todo-form input::placeholder{ color:#aaa;}
+
+#login-form {margin-bottom:20px;}
+#login-form input{width:328px; margin-right:10px;}
+#login-form button{
+    outline: none; border: none;
+    background-color:rgba(225,225,225,0);
+    color:#fff;
+    border:1px solid #fff;
+    width:80px;
+    height:36px;
+}
+
+#login-form button:hover{
+    background-color:rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+#todo-list{
+    width:400px;
+    padding:0;
+    margin:10px auto;
+    text-align: left;
+}
+
+#todo-list li{
+    line-height:32px;
+    list-style:none;
+    margin-bottom:4px;
+}
+
+#todo-list button{
+    float:right;
+    outline: none;
+    border: none;
+    background-color:rgba(225,225,225,0);
+    height:32px;
+    color:#fff;
+}
+
+#todo-list button:hover{
+    cursor: pointer;
+}
+
+#quotes {
+    width:100%;
+    position:fixed;
+    bottom:30px;
+    text-align: center;
+    font-size:14px;
+    opacity:0.6;
+}
+
+#weather-info{
+    position:fixed;
+    right:20px; top:20px;
+}

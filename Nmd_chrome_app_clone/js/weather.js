@@ -12,7 +12,7 @@ function onGeoOk(position){
         .then((date) => {
             const weather = date.weather[0].main;
 
-            weatherInfo.querySelector(".temp").innerText = date.main.temp + "°";
+            weatherInfo.querySelector(".temp").innerText = date.main.temp + "° / " + date.name;
             weatherInfo.querySelector(".weather").innerText = weather + " /";
         });
 }

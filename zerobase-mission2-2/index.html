@@ -60,13 +60,15 @@
                             <col style="width:auto;">
                         </colgroup>
                         <thead>
-                            <th scope="col" id="area" colspan="2">지역</th>
-                            <th scope="col" id="baseRate">기본요금<br>(2km까지)</th>
-                            <th scope="col" id="drivingRate">주행요금<br>(100원)</th>
-                            <th scope="col" id="hourlyRate">시간요금<br>(15km/h이하<br>주행 시 100원)</th>
-                            <th scope="col" id="nigthDriving">심야(0시~4시) 및<br>사업구역 외 운행</th>
-                            <th scope="col" id="date">시행일자</th>
-                            <th scope="col" id="note">비고</th>
+                            <tr>
+                                <th scope="col" id="area" colspan="2">지역</th>
+                                <th scope="col" id="baseRate">기본요금<br>(2km까지)</th>
+                                <th scope="col" id="drivingRate">주행요금<br>(100원)</th>
+                                <th scope="col" id="hourlyRate">시간요금<br>(15km/h이하<br>주행 시 100원)</th>
+                                <th scope="col" id="nigthDriving">심야(0시~4시) 및<br>사업구역 외 운행</th>
+                                <th scope="col" id="date">시행일자</th>
+                                <th scope="col" id="note">비고</th>
+                            </tr>
                         </thead>
                         <tbody>
                             <!-- 서울 -->
@@ -282,7 +284,7 @@
                                 <td headers="area jeonnam jeonnam_before hourlyRate">146m당</td>
                                 <td headers="area jeonnam jeonnam_before jeonnam_after nigthDriving" rowspan="2">심야 20%<br>사업구역외 35% 이내</td>
                                 <td headers="area jeonnam jeonnam_before jeonnam_after date" rowspan="2">19.04<br>(15.46% 인상)</td>
-                                <td headers="area jeonnam jeonnam_before after note" rowspan="2">15.km/h 이하<br>주행시 안전거리<br>동시병산</td>
+                                <td headers="area jeonnam jeonnam_before jeonnam_after note" rowspan="2">15.km/h 이하<br>주행시 안전거리<br>동시병산</td>
                             </tr>
                             <tr>
                                 <th id="jeonnam_after" scope="row"><strong>조정</strong></th>
@@ -309,7 +311,7 @@
                             </tr>
                             <!-- 경남 -->
                             <tr>
-                                <th scope="rowgroup" id="" rowspan="2">경남</th>
+                                <th scope="rowgroup" id="gyeongnam" rowspan="2">경남</th>
                                 <th scope="row" id="gyeongnam_before">종전</th>
                                 <td headers="area gyeongnam gyeongnam_before baseRate">2,800원</td>
                                 <td headers="area gyeongnam gyeongnam_before drivingRate">143m당</td>

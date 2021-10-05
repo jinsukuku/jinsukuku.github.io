@@ -122,7 +122,7 @@ footer { background-color: #eee; height: 100px;}
 .info { display: flex; }
 .info li { font-size: 12px; margin: 0 4px; }
 .info li:first-child { margin: 0 4px 6px 0; }
-.info li:last-child { margin-right: 14spx; }
+.info li:last-child { margin-right: 14px; }
 
 .info li, .copyright { color: #666; }
 

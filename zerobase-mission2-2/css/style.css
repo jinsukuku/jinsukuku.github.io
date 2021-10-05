@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+li{ list-style: none; }
+img { width: auto; heihgt: auto;}
+
+/* header */
+header{
+    width: 1100px; height: 84px;
+    padding: 30px 60px 20px 14px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;  
+}
+
+h1{ flex-grow: 1; }
+.utill{ margin-top: 18px; }
+.utill li{
+    float: left;
+    font-size: 12px;
+}
+.utill li:first-child{ margin-right:16px; }
+.utill li:last-child a{ color: #014083; }
+
+/* nav */
+nav{ background-color: #24384e; height: 40px;}
+nav ul{ 
+    width: 1100px;
+    margin: 0 auto; 
+    background-color: #466d97; 
+    display: flex;
+}
+nav li{
+    flex-grow: 1;
+    line-height: 40px;
+    text-align: center;
+}
+nav a{
+    color: #fff;
+}
+
+nav .selected { background-color:#dee5ec; }
+nav .selected a { color: #000; font-weight: bold; }
+
+/* main */
+main{
+    padding-bottom:100px;
+}
+.visual{
+    height : 180px;
+    background-image: url('http://www.taxi.or.kr/images/common/sub_visual.jpg');
+}
+.contenstWrap{ 
+    width: 1100px; 
+    margin: 0 auto;
+    display: flex; overflow: hidden;
+}
+
+/* sidebar */
+.sidebar{
+    width:200px;
+    margin-right:40px;
+}
+.sidebar dt{
+    line-height: 140px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-image: url("http://www.taxi.or.kr/images/bg/bg_title.jpg");
+    background-size: cover;
+}
+.sidebar dd{
+    border: 1px solid #ddd;
+    border-top: none;
+    line-height: 44px;
+    text-indent: 16px;
+    box-sizing: border-box;
+}
+
+
+/* contents */
+.contents{
+    flex-grow: 1;
+    padding-top:40px;
+}
+.contents h2{ font-size: 32px; margin-bottom:10px;}
+.contents h4{ margin-bottom: 40px; font-weight:400;}
+.contents h3{ font-size: 24px; margin-bottom: 10px;}
+.contents h3 span{ font-size: 16px; font-weight:400}
+
+/* table */
+table { width: 100%; }
+table, th, td { 
+    border : 1px solid #e2e2e2;  
+    border-collapse : collapse; 
+}
+thead th { border-top: 2px solid #444;}
+caption { 
+    width: 0; height: 0; 
+    font-size: 0; 
+    top: 0; left: 0; 
+    position:absolute; 
+}
+
+th { border-bottom: none; background-color:#eee;}
+th, td, strong { 
+    /* font-size: 18px;  */
+    font-size: 14px; 
+    line-height: 24px; 
+    text-align: center; 
+    padding: 6px 0px;
+}
+#before { font-weight: normal; } 
+#before, #after { background-color: #fff; }
+
+
+/* footer */
+footer { background-color: #eee; height: 100px;}
+.footerWrap { 
+    width: 1100px; 
+    margin: 0 auto; 
+    display: flex; 
+    padding-top:32px; 
+}
+.footerCi { 
+    width: 30%;  flex-grow: 1; 
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+.info { display: flex; }
+.info li { font-size: 12px; margin: 0 4px; }
+.info li:first-child { margin: 0 4px 6px 0; }
+
+.info li, .copyright { color: #666; }

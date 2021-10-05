@@ -53,7 +53,7 @@ main{
 }
 .visual{
     height : 180px;
-    background-image: url('http://www.taxi.or.kr/images/common/sub_visual.jpg');
+    background-image: url('../img/visualBg.jpeg');
 }
 .contenstWrap{ 
     width: 1100px; 

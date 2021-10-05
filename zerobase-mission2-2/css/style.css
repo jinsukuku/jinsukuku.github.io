@@ -88,7 +88,7 @@ table, th, td {
     border-collapse : collapse; 
 }
 thead th { border-top: 2px solid #444;}
-caption { 
+caption, caption span, caption strong { 
     width: 0; height: 0; 
     font-size: 0; 
     top: 0; left: 0; 

@@ -2,6 +2,9 @@ import {getBugMap} from './createBugMap.js';
 import {getBugPosition} from './createBugMap.js';
 import {getOpenTileList} from './getOpenTileList.js';
 
+// 모바일 조작법 안내
+alert("좌클릭 : 터치 / 우클릭 : 꾸욱");
+
 // HTML element reference
 let tile = document.querySelectorAll("li");
 let tileWrap = document.getElementById("tileWrap");

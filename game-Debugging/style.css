@@ -40,16 +40,16 @@ h1{
 .headerCount {width: 100px; height:100px;}
 .headerFace  {
     width: 210px; height:96px;
-    background: url(img/faceSad.png) no-repeat center;
+    background: url(./img/faceSad.png) no-repeat center;
     background-size: contain;
 }
 .headerFace:hover {cursor: pointer;}
 .happy:hover { 
-    background: url(img/faceWow.png) no-repeat center; 
+    background: url(./img/faceWow.png) no-repeat center; 
     background-size: contain;
 }
 .happy {
-    background: url(img/faceHappy.png) no-repeat center;
+    background: url(./img/faceHappy.png) no-repeat center;
     background-size: contain;
 }
 
@@ -60,10 +60,10 @@ h1{
     font-size: 36px;
     overflow: hidden;
     font-family: 'Gugi', cursive;
-    background: url(img/headerTime.png) top center no-repeat;
+    background: url(./img/headerTime.png) top center no-repeat;
     background-size: 86px;
 }
-.headerCount {background: url(img/headerCount.png) top no-repeat; background-size: 84px;}
+.headerCount {background: url(./img/headerCount.png) top no-repeat; background-size: 84px;}
 
 #tileWrap{
     width: 450px;
@@ -75,7 +75,7 @@ h1{
     height: var( --box );
     float: left;
     box-sizing: border-box;
-    background: var( --color01) url(img/defaultBg_white.png) center no-repeat;
+    background: var( --color01) url(./img/defaultBg_white.png) center no-repeat;
     background-size: cover;
 }
 
@@ -102,22 +102,22 @@ h1{
 }
 
 #tileWrap li.bug{
-    background-image:url(img/bug.png);
+    background-image:url(./img/bug.png);
     background-size: var( --box + 6 );
 }
 
 #tileWrap li.ghost{
-    background-image:url(img/ghost.png);
+    background-image:url(./img/ghost.png);
 }
 
 #tileWrap li.aroundBugCount{background-size: var( --box );}
-#tileWrap li.count0{ background-image:url(img/number/00.png);}
-#tileWrap li.count1{ background-image:url(img/number/01.png);}
-#tileWrap li.count2{ background-image:url(img/number/02.png);}
-#tileWrap li.count3{ background-image:url(img/number/03.png);}
-#tileWrap li.count4{ background-image:url(img/number/04.png);}
-#tileWrap li.count5{ background-image:url(img/number/05.png);}
-#tileWrap li.count6{ background-image:url(img/number/06.png);}
-#tileWrap li.count7{ background-image:url(img/number/07.png);}
-#tileWrap li.count8{ background-image:url(img/number/08.png);}
-#tileWrap li.count9{ background-image:url(img/number/09.png);}
+#tileWrap li.count0{ background-image:url(./img/number/00.png);}
+#tileWrap li.count1{ background-image:url(./img/number/01.png);}
+#tileWrap li.count2{ background-image:url(./img/number/02.png);}
+#tileWrap li.count3{ background-image:url(./img/number/03.png);}
+#tileWrap li.count4{ background-image:url(./img/number/04.png);}
+#tileWrap li.count5{ background-image:url(./img/number/05.png);}
+#tileWrap li.count6{ background-image:url(./img/number/06.png);}
+#tileWrap li.count7{ background-image:url(./img/number/07.png);}
+#tileWrap li.count8{ background-image:url(./img/number/08.png);}
+#tileWrap li.count9{ background-image:url(./img/number/09.png);}

@@ -1,5 +1,7 @@
 # dev-ku.github.io
 
+### 지뢰 찾기 - Debugging
+- https://dev-ku.github.io/game-Debugging/
 ### 노마드 코더 클론 코딩
   - <a href="https://nomadcoders.co/javascript-for-beginners">참고 강의</a>
   - <a href="https://github.com/dev-ku/TIL-FrontEnd/tree/main/clone-coding/chrome-app-clone">강의 내용 정리</a>

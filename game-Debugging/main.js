@@ -59,7 +59,7 @@ function setGameOver(){
 
 // 버그 위치 비교
 function checkBugPosition(){
-    if(userBugPosition.length >= bugPosition.length){
+    if(userBugPosition.length == bugPosition.length){
         // 오름차순 정렬 후
         userBugPosition.sort((a,b)=> a-b);
         // 문자열로 치환하여 비교
@@ -106,7 +106,6 @@ face.addEventListener("click", (e) => {
 // *tileWrap left click event
 tileWrap.addEventListener("click", (e) => {
     if(gameOver) return;    // 게임오버상태라면 더이상의 클릭을 허용하지 않는다
-    update();
 
     // 숫자가 표시된 타일이라면, 클릭 막기
     let index = Number(e.target.attributes["name"].value);
@@ -140,6 +139,9 @@ tileWrap.addEventListener("click", (e) => {
             e.target.classList.add("aroundBugCount", "count"+bugMap[row][col], "clicked");
         }
     }
+
+    update();
+    checkBugPosition();
 });
 
 // *tileWrap right click event
@@ -152,7 +154,7 @@ tileWrap.addEventListener("contextmenu", function(e){
     let classArr = [ ... e.target.classList ];
     if(classArr.indexOf("aroundBugCount") != -1) return;    
 
-    console.log("right click!");
+    console.log("right click! >>> "+index);
 
     if(!e.target.className){
         e.target.classList.add("clicked", "ghost");
@@ -162,10 +164,14 @@ tileWrap.addEventListener("contextmenu", function(e){
         e.target.className = "";
         userBugCount++;
         let idx = userBugPosition.indexOf(index);
-        userBugPosition.splice(idx);
+        let right = userBugPosition.slice(idx+1);
+        let left = userBugPosition.slice(0,idx);
+        console.log(`idx = ${idx},left = ${left}, right = ${right}`);
+        userBugPosition = left.concat(right);
     }
 
     // userBugPosition과 bugPosition 길이가 동일하면
+    console.log(userBugPosition);
     update();
     checkBugPosition();
 });

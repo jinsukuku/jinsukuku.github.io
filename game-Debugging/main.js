@@ -166,7 +166,6 @@ tileWrap.addEventListener("contextmenu", function(e){
         let idx = userBugPosition.indexOf(index);
         let right = userBugPosition.slice(idx+1);
         let left = userBugPosition.slice(0,idx);
-        console.log(`idx = ${idx},left = ${left}, right = ${right}`);
         userBugPosition = left.concat(right);
     }
 
